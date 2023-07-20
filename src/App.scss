@@ -1,0 +1,108 @@
+$header-color-first: #1b6b93;
+$header-color-second: #ff2171;
+$background-color-main: #fffad7;
+$background-color: #9575de;
+$button-color: #5a96e3;
+$button-color-hover: #0a6ebd;
+$text-color-main: white;
+
+body {
+  background-color: $background-color-main;
+}
+.header {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  justify-content: center;
+  border: $background-color solid;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  h1 {
+    color: $header-color-first;
+  }
+  .head {
+    color: $header-color-second;
+  }
+}
+.mainOne {
+  background-color: $background-color;
+  padding: 25px;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  width: 287px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  span {
+    color: $text-color-main;
+    font-size: 19px;
+    font-weight: 600;
+  }
+}
+.input {
+  display: flex;
+  justify-content: space-between;
+  input {
+    width: 97px;
+    border: none;
+    border-radius: 9px;
+    outline: none;
+    opacity: 0.5;
+    text-align: center;
+  }
+  input:focus,
+  :hover {
+    opacity: 1;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+.mainTwo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.div {
+  display: flex;
+  justify-content: space-between;
+  div {
+    background-color: $text-color-main;
+    width: 100px;
+    border: none;
+    border-radius: 9px;
+    opacity: 0.5;
+    text-align: center;
+  }
+}
+button {
+  width: 130px;
+  border: none;
+  border-radius: 5px;
+  background-color: $button-color;
+  color: $text-color-main;
+  font-weight: 600;
+  font-size: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  margin-top: 7px;
+}
+button:hover {
+  background-color: $button-color-hover;
+}
+.button {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 736px;
+}
+.opacity{
+  opacity: 1 !important;
+}
